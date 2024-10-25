@@ -1,0 +1,365 @@
+/* --- ACCUEIL --- */
+
+/* Mise en page du header */
+header { 
+  display:block;
+  background-color:black;
+  max-width: 97.5vw;
+  max-height: auto;
+}
+
+/* Mise en page du menu de navigation */
+.menu {
+    display:flex;
+    background-color:black;
+    justify-content: space-around;
+}
+
+.menu .home {
+  max-width: 40px;
+  max-height: auto;
+  margin-top:25%
+}
+
+/* Mise en page du logo */
+.logo {
+    display:flex;
+    margin: 1.1% 0 0 1.5%;
+    max-width: 10vw;
+    height: 10vh;
+
+}
+
+/* Esthétique des boutons de navigation */
+.menu, a {
+    color:white;
+    text-decoration: none;
+    margin: 1% 2% 1% 2%;
+}
+
+/* Changement de couleur selon si souris dessus ou non */
+.menu, a:hover {
+    color:antiquewhite;
+    
+}
+
+/* Mise en page de la vidéo de fond */
+#video {
+  max-width: 100vw;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top:20%;
+  left:0;
+}
+
+/* Mise en page du titre de la page */
+.title {
+    display:flex;
+    color:white;
+    margin-top: 25%;
+    margin-left: 29%;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    z-index: 1;
+}
+
+/* Résumé de l'accueil */
+.resume {
+    color:white;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Titre de l'actualité */
+.actus {
+    display:flex;
+    margin: 20% 0 0 0;
+    justify-content: space-around;
+    padding: 3% 0 3% 0
+
+}
+
+/* Mise en page (en ligne) de la première rangée d'actu */
+.actu1 {
+    display:flex;
+    justify-content: space-between;
+}
+
+/* Mise en page du margin et padding des actus */
+.actu {
+    margin: 0 3% 0 3%;
+    padding: 3% 0 3% 0;
+}
+
+/* Grossissement des images si souris dessus */
+.actu img:hover {
+    transform: scale(110%);
+    filter: brightness(1.4);
+}
+
+/* Mise en page du footer */
+footer {
+  margin-top: 10%;
+  background-color: black;
+}
+/* REALISATION */
+
+/* Centrage du texte */
+.reatitle h3, p {
+  display:flex;
+  justify-content: center;
+
+}
+
+.reaimg {
+  display:flex;
+  flex-flow: nowrap row;
+  justify-content: space-around;
+}
+/* EVENEMENTS */
+
+/*Mise en page du titre */
+.titleeve {
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  margin-bottom: 10vh;
+}
+
+.worldstext {
+  margin-top: 10vh;
+}
+
+/* Mise en page de l'image de l'entête */
+.titleeve img {
+  z-index: -1;
+  left:2.5%
+}
+
+/* Mise en page des tableaux */
+.twozerotwoone h2 {
+  display:flex;
+  margin-left: 43%
+}
+
+.twozerotwoone a {
+  margin-left: 28%
+}
+
+/* Grossissement des images si souris dessus */
+.twozerotwoone img:hover {
+  transform: scale(110%);
+  filter: brightness(1.4);
+}
+
+/* PHOTOS ET VIDEOS */
+
+/* Mise en page de la vidéo + texte à côté */
+.photovod {
+  display:flex;
+  flex-flow: nowrap row;
+}
+
+/* Margin des vidéos pour éviter qu'elles se collent */
+.photovod iframe {
+  margin-top: 2%
+}
+
+/* Margin du texte pour pas coller la vidéo */
+.phototxt {
+  margin: 0 0 0 2%;
+}
+
+/* Centrage du titre de la section */
+.phototxt h3 {
+  display:flex;
+  justify-content: center;
+}
+
+/* photovod bis */
+.photovod2 {
+  display:flex;
+  flex-flow: nowrap row-reverse;
+}
+
+/* photovod iframe bis */
+.photovod2 iframe {
+  margin-top: 2%
+}
+
+/* phototxt bis */
+.phototxt2 {
+  margin: 0 0 0 2%
+}
+
+/*phototxt h3 bis */
+.phototxt2 h3 {
+  display:flex;
+  justify-content: center;
+}
+
+/* LIENS UTILES */
+
+/* Mise en page du nom des liens au dessus des photos */
+.liensut {
+  display:flex;
+  flex-flow: wrap column;
+  justify-content: space-around
+}
+
+/* Mise en page du nom des liens en ligne */
+.lienstxt {
+  display:flex;
+  flex-flow: wrap row;
+  justify-content: space-around
+}
+
+/* Mise en page des photos avec liens */
+.liensimg {
+  display:flex;
+  justify-content:space-around;
+}
+
+/* Rétrécissage des photos */
+.liensut img {
+  width: 150px;
+}
+
+/* Grossissement des images si souris dessus */
+.liensimg img:hover {
+  transform: scale(110%);
+  filter: brightness(1.4)
+}
+
+/* CONTACT */
+/* CONTACT FORMS */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Bordure arrondit */
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  
+  /* Background bouton validé */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* bouton validé plus foncé si souris dessus */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Couleur de background + padding autour du formulaire */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%;
+  }
+
+
+
+
+  /* CHECKBOX */ 
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506eec;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #506eec;
+  }
+  
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #506eec;
+    border-color: #506eec;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+  .Submit{
+    padding-top: 2em;
+  } 

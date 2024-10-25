@@ -1,0 +1,706 @@
+/*FOND D'ECRAN*/
+.home{
+    background-color: #E9E7E6;
+}
+
+
+/*POLICE D'ECRITURE*/
+@font-face {
+    font-family: "POLICE_DAMSO" ;
+    src: url(linux_libertine/CELLE\ LA.ttf);
+}
+
+@font-face {
+    font-family: "POLICE_DAMSO2" ;
+    src: url(linux_libertine/CELLE\ LA\ BANNIERE.ttf);
+}
+
+/*GRANDS TITRES*/
+.DAMSO{
+    font-family: "POLICE_DAMSO";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    
+}
+.DAMSO a{ 
+    outline: none;
+    text-decoration:none;
+    display:inline-block;
+    color: rgb(0, 0, 0);
+    cursor:text;
+}
+
+/*MODIFICATION DE L'ENTETE*/
+.banniere{
+    display: flex;
+    justify-content:space-around; 
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border-style:hidden;
+    font-family: "POLICE_DAMSO2";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    }
+
+.banniere a:hover{
+    color:rgb(255, 0, 0); /*SURBRILLANCE DES TITRES */
+}
+
+.banniere a{
+  outline: none;
+  text-decoration:none;  /*COULEUR DES TITRES */
+  display:inline-block;
+  color: rgb(255, 255, 255);
+}
+
+
+/* BARRE DE RECHERCHE */ 
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #000000;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(255, 8, 0, 0.4); /* COULEUR DU CONTOUR QUI BRILLE */ 
+    background-color: #d8d6d6;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   
+
+   /*TEXTE INTRO*/
+   .intro{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: "POLICE_DAMSO2";
+}
+
+
+ /*PAGE SECRETTE*/
+.DAMSO2{
+    font-family: "POLICE_DAMSO";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    color: red;
+}
+    .secret{
+        background-color: rgb(0, 0, 0);
+        color:white;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+
+
+/*MISE EN FORME PARAGRAPHE*/
+p{
+    
+    margin-right: 10em;
+    margin-left: 10em; 
+    text-align: justify;
+    font-size: 1.5em;
+    font-family: "POLICE_DAMSO2";
+
+}
+
+
+
+/*MISE EN FORME IMAGE*/
+.mosaiqueintro img{
+    margin: 0em 3em 3em 3em;
+    border-color: black;
+    border-radius: 5%;
+    transition: 0.2 ease-in-out;
+    filter: grayscale(100);
+}
+.mosaiqueintro img:hover{
+    filter: grayscale(0);
+}
+
+@media(max-width:767px) {
+    .mosaiqueintro{
+        column-count:2 ;
+    }
+    .mosaiqueintro img{
+        object-fit: cover;
+        height: 180px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* CONTACT FORMS */
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #cccccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* BACKGROUND PADDING FORMS */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+  }
+
+
+  /* CHECKBOX */ 
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506eec;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #506eec;
+  }
+  
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #506eec;
+    border-color: #506eec;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+  .Submit{
+    padding-top: 2em;
+  }
+
+
+
+
+  /* ALBUM COVER REALISATIONS*/
+.main-container {
+  margin:4em auto 0 auto;
+  width:650px;
+  .controls {
+    margin:0 auto;
+    padding:2em 0 0 0;
+    text-align:center;
+  }
+}
+
+
+.controls label {
+	color:#999;
+  display:inline-block;
+  padding:10px;
+  border:1px solid black;
+  cursor:pointer;
+  background:#252525;
+  text-shadow:1px 1px 2px rgba(0,0,0,0.9);
+  &:hover {
+    color:#ff0000;
+  }
+}
+
+.coverflow-list {
+  width:100%;
+  .coverflow-item {
+    display:inline-block;
+    background:#414141;
+    margin:0 -50px;
+    position:relative;
+    box-shadow:0 1px 8px rgba(0,0,0,0.9);
+    .album-cover {
+      display:block;
+      height:150px;
+      margin:0;
+      img {
+        height:150px;
+        width:150px;
+        opacity:0.5;
+      }
+    }
+    .album-name {
+      text-align:center;
+      display:block;
+      color:#444;
+    }
+    label {
+    	padding:0;
+      border:none;
+      display:block;
+      text-shadow:none;
+    }
+  }
+}
+
+.coverflow-list {
+	transform: perspective(900px);
+  transform-style: preserve-3d;
+  perspective-origin: 100% 30%;
+  .coverflow-item {
+    transition: all;
+    background:#212121;
+    transform: rotateY(45deg);
+  }
+}
+
+input[type="radio"] {
+  display:none;
+  &:checked {
+    + .coverflow-item {
+      transform: rotateY( 0deg );
+      margin:0 auto;
+      background:#313131;
+      transition:all;
+      img { opacity:1; }
+      figcaption { color:#000000; }
+      ~ .coverflow-item {
+      	transform:rotateY(-45deg);
+        background:#515151;
+      }
+    }
+  }
+}
+
+/* FOOTER */
+footer{
+  margin-top: 15%;
+  max-width: 100vw;
+}
+
+
+/* CARTE DE NEWS*/
+body {
+  font-family: "POLICE_DAMSO2";
+  min-height: 100vh;
+
+  a {
+    text-decoration: none;
+    color: #2d57a1;
+  }
+
+  h1 {
+    font-family: "POLICE_DAMSO2";
+  }
+}
+
+
+:root {
+  font-size: 16px;
+  --card-img-height: 200px;
+}
+
+.card-container {
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+
+.card {
+  align-self: flex-start;
+  position: relative;
+  width: 325px;
+  min-width: 275px;
+  margin: 1.25rem 0.75rem;
+  background: white;
+  transition: all 300ms ease-in-out;
+
+  .card-img {
+    visibility: hidden;
+    width: 100%;
+    height: var(--card-img-height);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-img-hovered {
+    --card-img-hovered-overlay: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+    transition: all 350ms ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    height: var(--card-img-height);
+    top: 0;
+  }
+
+  .card-info {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    transition: all 200ms ease-in-out;
+
+    .card-about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      transition: all 200ms ease-in-out;
+
+      .card-tag {
+        width: 60px;
+        max-width: 100px;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: #505f79;
+        color: #fff;
+
+        &.tag-news {
+          background: #36b37e;
+        }
+
+        &.tag-deals {
+          background: #ffab00;
+        }
+
+        &.tag-politics {
+          width: 71px;
+          background: #ff5630;
+        }
+      }
+    }
+
+    .card-title {
+      z-index: 10;
+      font-size: 1.5rem;
+      padding-bottom: 0.75rem;
+      transition: all 350ms ease-in-out;
+    }
+
+    .card-creator {
+      padding-bottom: 0.75rem;
+      transition: all 250ms ease-in-out;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1),
+      0px 5px 15px rgba(0, 0, 0, 0.07);
+    transform: scale(1.025);
+
+    .card-img-hovered {
+      --card-img-hovered-overlay: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.65)
+      );
+      height: 100%;
+    }
+
+    .card-about,
+    .card-creator {
+      opacity: 0;
+    }
+
+    .card-info {
+      background-color: transparent;
+    }
+
+    .card-title {
+      color: #ebecf0;
+      transform: translate(0,40px);
+    }
+  }
+}
+
+/*CARD IMAGES*/
+
+.card-1 {
+  .card-img,
+  .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay),
+      url(médiassamuel/damso2.jpg);
+  }
+}
+
+.card-2 {
+  .card-img,
+  .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay),
+      url(médiassamuel/damso3.webp);
+  }
+}
+
+.card-3 {
+  .card-img,
+  .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay),
+      url(médiassamuel/beyah.jpg);
+  }
+}
+
+
+/*IMAGE MOSAïQUE MEDIAS */
+.mosaique{
+  width: 1000px;
+  max-width: 100%;
+  margin:0 auto;
+  column-count: 6;
+  column-gap: 15px;
+}
+
+.mosaique img{
+  display: block;
+  width:100%  ;
+  height:auto ;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+  transition: 0.2 ease-in-out;
+}
+
+
+@media(max-width:767px) {
+  .mosaique{
+      column-count:2 ;
+  }
+  .mosaique img{
+      object-fit: cover;
+      height: 180px;
+  }
+}
+
+
+
+/* LIENS RESEAUX SOCIAUX */
+
+.reso {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.youtube {
+  background-color: #ff0000;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+
+/* RESIZE INTEGRATION SPOTIFY */
+.spotify{
+  padding-top:5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+/* BOUTON HOME */
+
+.banniere .welcomeh{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+
+
+
